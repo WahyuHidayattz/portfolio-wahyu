@@ -1,0 +1,311 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/app.css">
+    <title>Wahyu Hidayat</title>
+</head>
+<body class="flex flex-col w-full min-h-screen text-gray-600 bg-white dark:bg-slate-800 dark:text-slate-400">
+
+    <section id="home" class="flex flex-col w-full bg-white dark:bg-slate-800">
+        <!-- navbar -->
+        <div id="navbar" class="fixed top-0 z-20 flex flex-row items-center justify-between w-full h-16 gap-4 container-w lg:h-20 dark:bg-slate-800/70 bg-white/80 backdrop-blur-md backdrop-filter">
+            <div class="flex flex-row items-center gap-8">
+                <h1 class="text-2xl font-bold text-slate-900 dark:text-white">Wahyu Hidayat</h1>
+                <div class="flex-row items-center hidden gap-2 lg:flex text-slate-700 dark:text-slate-400">
+                    <a href="#home" class="px-4 py-1 hover:text-indigo-600">Home</a>
+                    <a href="#about" class="px-4 py-1 hover:text-indigo-600">About</a>
+                    <a href="#portpolio" class="px-4 py-1 hover:text-indigo-600">Portfolio</a>
+                    <a href="#contact" class="px-4 py-1 hover:text-indigo-600">Contact</a>
+                </div>
+            </div>
+            <div class="flex flex-row items-center gap-3">
+                <button id="button-theme1" class="flex-row items-center hidden gap-3 p-3 text-white bg-indigo-500 rounded-full shadow-md dark:text-black lg:flex hover:shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                      </svg>
+                </button>
+                <a href="https://wahyuhidayattz.000webhostapp.com/files/cv-wahyu-hidayat.pdf" class="flex-row items-center hidden gap-3 px-6 py-3 font-medium text-white transition duration-200 bg-indigo-500 rounded-full shadow-md dark:text-black lg:flex hover:shadow-lg">
+                    Download CV
+                </a>
+                <button id="button-navigation" class="flex flex-col items-center justify-center gap-2 p-3 rounded-full lg:hidden hover:bg-gray-500/10 aspect-square">
+                    <span class="w-6 h-1 bg-slate-600 dark:bg-slate-400 ham"></span>
+                    <span class="w-6 h-1 bg-slate-600 dark:bg-slate-400 ham"></span>
+                </button>
+            </div>
+            <div id="nav-list" class="fixed right-0 top-0 mr-4 mt-16 flex dark:bg-slate-800 dark:border-slate-700  flex-col bg-white shadow-xl min-w-[200] overflow-hidden rounded-lg  border border-gray-200 hidden">
+                <a href="#home" class="px-4 py-3 hover:bg-gray-200 dark:hover:bg-slate-700">
+                    Home
+                </a>
+                <a href="#about" class="px-4 py-3 hover:bg-gray-200 dark:hover:bg-slate-700">
+                    About
+                </a>
+                <a href="#portpolio" class="px-4 py-3 hover:bg-gray-200 dark:hover:bg-slate-700">
+                    Portfolio
+                </a>
+                <a href="#contact" class="px-4 py-3 hover:bg-gray-200 dark:hover:bg-slate-700">
+                    Contact
+                </a>
+                <a href="https://wahyuhidayattz.000webhostapp.com/files/cv-wahyu-hidayat.pdf" class="px-4 py-3 text-white bg-indigo-500 dark:text-black dark:text-base hover:bg-indigo-600">
+                    Download CV
+                </a>
+                <button id="button-theme2" class="flex flex-col items-start justify-start w-full px-4 py-3 text-white bg-slate-900 hover:bg-slate-800">
+                    Switch Theme
+                </button>
+            </div>
+        </div>
+        <!-- end of navbar -->
+
+        <!-- home section -->
+        <div class="flex flex-col lg:grid lg:grid-cols-2 container-w">
+            <div class="flex flex-col justify-center gap-6 pt-32 lg:gap-12 lg:mt-0">
+                <div class="flex flex-col gap-4">
+                    <span class="font-semibold text-indigo-500">Halo, Nama Saya</span>
+                    <h1 class="text-4xl font-bold text-slate-900 dark:text-white">Wahyu Hidayat</h1>
+                    <span class="">Saya adalah seorang Admin <span class="font-semibold text-indigo-500">Data Analyst</span> <br>di salah satu perusahaan rite indonesia.</span>
+                </div>
+                <div class="flex flex-row flex-wrap items-center gap-6">
+                    <a href="#contact" class="flex flex-row items-center gap-3 px-6 py-3 font-semibold text-white transition duration-200 bg-indigo-500 rounded-full hover:shadow-lg hover:-translate-y-1 dark:text-black">
+                        Kontak Saya
+                    </a>
+                    <a href="#about" class="flex flex-row items-center gap-3 px-6 py-3 font-semibold text-white transition duration-200 rounded-full bg-slate-900 hover:shadow-lg hover:-translate-y-1">
+                        Tentang Saya
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center z-10 bg-[url('images/blob.svg')]">
+                    <img src="assets/images/wahyu-transparent.png" alt="" class="max-w-[480] w-full">
+                </div>
+            </div>
+        </div>
+        <div class="absolute right-0 mt-24 mr-4 text-gray-500">
+            <svg width="61" height="77" viewBox="0 0 61 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <circle cx="45.0001" cy="1.66667" r="1.66667" transform="rotate(90 45.0001 1.66667)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="1.66667" r="1.66667" transform="rotate(90 16.0001 1.66667)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="1.66667" r="1.66667" transform="rotate(90 59.0001 1.66667)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="1.66667" r="1.66667" transform="rotate(90 30.6668 1.66667)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="1.66667" r="1.66667" transform="rotate(90 1.66683 1.66667)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="16.3332" r="1.66667" transform="rotate(90 45.0001 16.3332)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="16.3332" r="1.66667" transform="rotate(90 16.0001 16.3332)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="16.3332" r="1.66667" transform="rotate(90 59.0001 16.3332)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="16.3332" r="1.66667" transform="rotate(90 30.6668 16.3332)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="16.3332" r="1.66667" transform="rotate(90 1.66683 16.3332)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="31.0002" r="1.66667" transform="rotate(90 45.0001 31.0002)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="74.6667" r="1.66667" transform="rotate(90 45.0001 74.6667)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="31.0002" r="1.66667" transform="rotate(90 16.0001 31.0002)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="74.6667" r="1.66667" transform="rotate(90 16.0001 74.6667)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="31.0002" r="1.66667" transform="rotate(90 59.0001 31.0002)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="74.6667" r="1.66667" transform="rotate(90 59.0001 74.6667)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="31.0002" r="1.66667" transform="rotate(90 30.6668 31.0002)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="74.6667" r="1.66667" transform="rotate(90 30.6668 74.6667)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="31.0002" r="1.66667" transform="rotate(90 1.66683 31.0002)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="74.6667" r="1.66667" transform="rotate(90 1.66683 74.6667)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="45.6667" r="1.66667" transform="rotate(90 45.0001 45.6667)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="45.6667" r="1.66667" transform="rotate(90 16.0001 45.6667)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="45.6667" r="1.66667" transform="rotate(90 59.0001 45.6667)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="45.6667" r="1.66667" transform="rotate(90 30.6668 45.6667)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="45.6667" r="1.66667" transform="rotate(90 1.66683 45.6667)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="60.3332" r="1.66667" transform="rotate(90 45.0001 60.3332)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="60.3332" r="1.66667" transform="rotate(90 16.0001 60.3332)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="60.3332" r="1.66667" transform="rotate(90 59.0001 60.3332)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="60.3332" r="1.66667" transform="rotate(90 30.6668 60.3332)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="60.3332" r="1.66667" transform="rotate(90 1.66683 60.3332)" fill="currentColor"></circle>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="flex flex-col lg:grid lg:grid-cols-2 container-w gap-8 lg:gap-32 !py-14">
+        <div class="flex flex-col gap-4">
+            <h1 class="text-2xl font-bold text-indigo-600">Tentang Saya</h1>
+            <span class="leading-relaxed">
+                Halo, perkenalkan nama saya Wahyu Hidayat. Saat ini saya bekerja sebagai Admin Productivity Analyst, saya terbiasa bekerja mengolah data menggunakan Microsoft Excel dan Mysql.
+                Saya saat ini sedang menjalankan kuliah di jurusan Teknik Informatika. Saya tertarik belajar tentang web programming.
+            </span>
+            <div class="flex flex-row flex-wrap items-center gap-4">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" class="flex flex-row items-center gap-3 px-4 py-2 overflow-hidden border border-gray-200 rounded-lg dark:border-slate-700 dark:hover:text-black hover:border-green-500 hover:bg-green-500 hover:text-white">
+                    Microsoft Excel
+                </a>
+                <a href="https://www.mysql.com/" target="_blank" class="flex flex-row items-center gap-3 px-4 py-2 overflow-hidden border border-gray-200 rounded-lg dark:border-slate-700 dark:hover:text-black hover:border-orange-500 hover:bg-orange-500 hover:text-white">
+                    Mysql
+                </a>
+                <a href="https://figma.com" target="_blank" class="flex flex-row items-center gap-3 px-4 py-2 overflow-hidden border border-gray-200 rounded-lg dark:border-slate-700 dark:hover:text-black hover:border-indigo-500 hover:bg-indigo-500 hover:text-white">
+                    Figma
+                </a>
+                <a href="https://tailwindcss.com" target="_blank" class="flex flex-row items-center gap-3 px-4 py-2 overflow-hidden border border-gray-200 rounded-lg dark:border-slate-700 dark:hover:text-black hover:border-sky-500 hover:bg-sky-500 hover:text-white">
+                    Tailwindcss
+                </a>
+                <a href="https://reactjs.org/" target="_blank" class="flex flex-row items-center gap-3 px-4 py-2 overflow-hidden border border-gray-200 rounded-lg dark:border-slate-700 dark:hover:text-white hover:border-slate-900 hover:bg-slate-900 hover:text-white">
+                    React
+                </a>
+                <a href="https://laravel.com/" target="_blank" class="flex flex-row items-center gap-3 px-4 py-2 overflow-hidden border border-gray-200 rounded-lg dark:border-slate-700 dark:hover:text-black hover:border-red-500 hover:bg-red-500 hover:text-white">
+                    Laravel
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h1 class="text-xl font-semibold text-slate-900 dark:text-white">Sosial Media Saya</h1>
+            <span class="leading-relaxed">
+                Dibawah ini adalah link sosial media saya, silahkan jika anda ingin meng-kepoin saya di sosial media :D. jangan lupa di follow ya.
+            </span>
+            <div class="flex flex-row flex-wrap gap-4">
+                <a href="https://wa.me/082249925346" target="_blank" class="inline-block p-2 border border-gray-200 rounded-full dark:border-slate-700 dark:hover:text-black hover:bg-indigo-500 hover:border-indigo-500 hover:text-white">
+                    <i data-feather="message-circle"></i>
+                </a>
+                <a href="https://www.instagram.com/wagyu135/" target="_blank" class="inline-block p-2 border border-gray-200 rounded-full dark:border-slate-700 dark:hover:text-black hover:bg-indigo-500 hover:border-indigo-500 hover:text-white">
+                    <i data-feather="instagram"></i>
+                </a>
+                <a href="https://twitter.com/wagyu135" target="_blank" class="inline-block p-2 border border-gray-200 rounded-full dark:border-slate-700 dark:hover:text-black hover:bg-indigo-500 hover:border-indigo-500 hover:text-white">
+                    <i data-feather="twitter"></i>
+                </a>
+                <a href="https://telegram.org/wahyu135" target="_blank" class="inline-block p-2 border border-gray-200 rounded-full dark:border-slate-700 dark:hover:text-black hover:bg-indigo-500 hover:border-indigo-500 hover:text-white">
+                    <i data-feather="send"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute left-0 ml-4 text-gray-500">
+            <svg width="61" height="77" viewBox="0 0 61 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <circle cx="45.0001" cy="1.66667" r="1.66667" transform="rotate(90 45.0001 1.66667)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="1.66667" r="1.66667" transform="rotate(90 16.0001 1.66667)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="1.66667" r="1.66667" transform="rotate(90 59.0001 1.66667)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="1.66667" r="1.66667" transform="rotate(90 30.6668 1.66667)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="1.66667" r="1.66667" transform="rotate(90 1.66683 1.66667)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="16.3332" r="1.66667" transform="rotate(90 45.0001 16.3332)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="16.3332" r="1.66667" transform="rotate(90 16.0001 16.3332)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="16.3332" r="1.66667" transform="rotate(90 59.0001 16.3332)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="16.3332" r="1.66667" transform="rotate(90 30.6668 16.3332)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="16.3332" r="1.66667" transform="rotate(90 1.66683 16.3332)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="31.0002" r="1.66667" transform="rotate(90 45.0001 31.0002)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="74.6667" r="1.66667" transform="rotate(90 45.0001 74.6667)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="31.0002" r="1.66667" transform="rotate(90 16.0001 31.0002)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="74.6667" r="1.66667" transform="rotate(90 16.0001 74.6667)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="31.0002" r="1.66667" transform="rotate(90 59.0001 31.0002)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="74.6667" r="1.66667" transform="rotate(90 59.0001 74.6667)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="31.0002" r="1.66667" transform="rotate(90 30.6668 31.0002)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="74.6667" r="1.66667" transform="rotate(90 30.6668 74.6667)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="31.0002" r="1.66667" transform="rotate(90 1.66683 31.0002)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="74.6667" r="1.66667" transform="rotate(90 1.66683 74.6667)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="45.6667" r="1.66667" transform="rotate(90 45.0001 45.6667)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="45.6667" r="1.66667" transform="rotate(90 16.0001 45.6667)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="45.6667" r="1.66667" transform="rotate(90 59.0001 45.6667)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="45.6667" r="1.66667" transform="rotate(90 30.6668 45.6667)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="45.6667" r="1.66667" transform="rotate(90 1.66683 45.6667)" fill="currentColor"></circle>
+                <circle cx="45.0001" cy="60.3332" r="1.66667" transform="rotate(90 45.0001 60.3332)" fill="currentColor"></circle>
+                <circle cx="16.0001" cy="60.3332" r="1.66667" transform="rotate(90 16.0001 60.3332)" fill="currentColor"></circle>
+                <circle cx="59.0001" cy="60.3332" r="1.66667" transform="rotate(90 59.0001 60.3332)" fill="currentColor"></circle>
+                <circle cx="30.6668" cy="60.3332" r="1.66667" transform="rotate(90 30.6668 60.3332)" fill="currentColor"></circle>
+                <circle cx="1.66683" cy="60.3332" r="1.66667" transform="rotate(90 1.66683 60.3332)" fill="currentColor"></circle>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!-- portpolio section -->
+    <section id="portpolio" class="flex flex-col container-w !py-12 bg-slate-100 dark:bg-slate-900 gap-4 items-center">
+        <span class="text-2xl font-bold text-slate-900 dark:text-white">Portfolio</span>
+        <span class="leading-loose max-w-[800] text-center">
+            Berikut adalah beberapa web dan aplikasi yang pernah saya buat.
+        </span>
+        <div class="grid w-full grid-cols-1 gap-8 mt-8 lg:grid-cols-3 md:grid-cols-2" id="porto-container">
+           
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 bg-white dark:bg-slate-800 container-w !py-12 w-full">
+        <div class="flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold text-slate-900 dark:text-white">Kontak Saya</h1>
+            <span class="leading-relaxed">Jika ada yang ingin disampaikan, atau ada yang perlu dibicarakan silahkan menghubungi saya via email. Saya akan dengan senang hati membaca email yang masuk.</span>
+        </div>
+        <form action="mailto:wahyuhidayatsmk2@gmail.com" method="post" enctype="text/plain" class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+                 <label for="" class="font-semibold text-indigo-500">Nama</label>
+                 <input type="text" name="nama" class="w-full px-4 py-2 transition duration-200 border-b-2 outline-none border-slate-200 bg-slate-200 dark:border-b-slate-900 dark:bg-slate-900 focus:border-b-2 focus:border-b-indigo-500 dark:focus:border-b-indigo-500">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="" class="font-semibold text-indigo-500">Email</label>
+                <input type="text" name="email" class="w-full px-4 py-2 transition duration-200 border-b-2 outline-none border-slate-200 bg-slate-200 dark:border-b-slate-900 dark:bg-slate-900 focus:border-b-2 focus:border-b-indigo-500 dark:focus:border-b-indigo-500">
+           </div>
+           <div class="flex flex-col gap-2">
+                <label for="" class="font-semibold text-indigo-500">Pesan</label>
+                <textarea type="text" name="pesan" class="w-full px-4 py-2 transition duration-200 border-b-2 outline-none border-slate-200 bg-slate-200 dark:border-b-slate-900 dark:bg-slate-900 focus:border-b-2 focus:border-b-indigo-500 dark:focus:border-b-indigo-500" rows="5"></textarea>    
+            </div>
+            <button type="submit" class="px-4 py-2 text-white bg-indigo-500 rounded-full hover:bg-indigo-400 dark:text-black">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <section id="footer" class="flex flex-col container-w bg-slate-900 text-slate-400">
+        <div class="flex lg:flex-row flex-col lg:gap-24 gap-6 !py-12">
+            <span class="absolute right-0 mr-8">
+                <svg width="61" height="77" viewBox="0 0 61 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                    <circle cx="45.0001" cy="1.66667" r="1.66667" transform="rotate(90 45.0001 1.66667)" fill="white"></circle>
+                    <circle cx="16.0001" cy="1.66667" r="1.66667" transform="rotate(90 16.0001 1.66667)" fill="white"></circle>
+                    <circle cx="59.0001" cy="1.66667" r="1.66667" transform="rotate(90 59.0001 1.66667)" fill="white"></circle>
+                    <circle cx="30.6668" cy="1.66667" r="1.66667" transform="rotate(90 30.6668 1.66667)" fill="white"></circle>
+                    <circle cx="1.66683" cy="1.66667" r="1.66667" transform="rotate(90 1.66683 1.66667)" fill="white"></circle>
+                    <circle cx="45.0001" cy="16.3332" r="1.66667" transform="rotate(90 45.0001 16.3332)" fill="white"></circle>
+                    <circle cx="16.0001" cy="16.3332" r="1.66667" transform="rotate(90 16.0001 16.3332)" fill="white"></circle>
+                    <circle cx="59.0001" cy="16.3332" r="1.66667" transform="rotate(90 59.0001 16.3332)" fill="white"></circle>
+                    <circle cx="30.6668" cy="16.3332" r="1.66667" transform="rotate(90 30.6668 16.3332)" fill="white"></circle>
+                    <circle cx="1.66683" cy="16.3332" r="1.66667" transform="rotate(90 1.66683 16.3332)" fill="white"></circle>
+                    <circle cx="45.0001" cy="31.0002" r="1.66667" transform="rotate(90 45.0001 31.0002)" fill="white"></circle>
+                    <circle cx="45.0001" cy="74.6667" r="1.66667" transform="rotate(90 45.0001 74.6667)" fill="white"></circle>
+                    <circle cx="16.0001" cy="31.0002" r="1.66667" transform="rotate(90 16.0001 31.0002)" fill="white"></circle>
+                    <circle cx="16.0001" cy="74.6667" r="1.66667" transform="rotate(90 16.0001 74.6667)" fill="white"></circle>
+                    <circle cx="59.0001" cy="31.0002" r="1.66667" transform="rotate(90 59.0001 31.0002)" fill="white"></circle>
+                    <circle cx="59.0001" cy="74.6667" r="1.66667" transform="rotate(90 59.0001 74.6667)" fill="white"></circle>
+                    <circle cx="30.6668" cy="31.0002" r="1.66667" transform="rotate(90 30.6668 31.0002)" fill="white"></circle>
+                    <circle cx="30.6668" cy="74.6667" r="1.66667" transform="rotate(90 30.6668 74.6667)" fill="white"></circle>
+                    <circle cx="1.66683" cy="31.0002" r="1.66667" transform="rotate(90 1.66683 31.0002)" fill="white"></circle>
+                    <circle cx="1.66683" cy="74.6667" r="1.66667" transform="rotate(90 1.66683 74.6667)" fill="white"></circle>
+                    <circle cx="45.0001" cy="45.6667" r="1.66667" transform="rotate(90 45.0001 45.6667)" fill="white"></circle>
+                    <circle cx="16.0001" cy="45.6667" r="1.66667" transform="rotate(90 16.0001 45.6667)" fill="white"></circle>
+                    <circle cx="59.0001" cy="45.6667" r="1.66667" transform="rotate(90 59.0001 45.6667)" fill="white"></circle>
+                    <circle cx="30.6668" cy="45.6667" r="1.66667" transform="rotate(90 30.6668 45.6667)" fill="white"></circle>
+                    <circle cx="1.66683" cy="45.6667" r="1.66667" transform="rotate(90 1.66683 45.6667)" fill="white"></circle>
+                    <circle cx="45.0001" cy="60.3332" r="1.66667" transform="rotate(90 45.0001 60.3332)" fill="white"></circle>
+                    <circle cx="16.0001" cy="60.3332" r="1.66667" transform="rotate(90 16.0001 60.3332)" fill="white"></circle>
+                    <circle cx="59.0001" cy="60.3332" r="1.66667" transform="rotate(90 59.0001 60.3332)" fill="white"></circle>
+                    <circle cx="30.6668" cy="60.3332" r="1.66667" transform="rotate(90 30.6668 60.3332)" fill="white"></circle>
+                    <circle cx="1.66683" cy="60.3332" r="1.66667" transform="rotate(90 1.66683 60.3332)" fill="white"></circle>
+                    </g>
+                </svg>
+            </span>
+            <div class="flex flex-col gap-4">
+                <h1 class="text-2xl font-bold text-white">Ayo Bicara!</h1>
+                <span class="text-lg font-semibold">Info Kontak :</span>
+                <ul class="flex flex-col gap-2">
+                    <li>wahyuhidayatsmk2@gmail.com</li>
+                    <li>Pandeglang, Banten</li>
+                    <li>0822 4992 5236</li>
+                </ul>
+            </div>
+            <div class="flex flex-row flex-wrap justify-evenly">
+                Website portpolio ini dibuat oleh saya sendiri menggunakan tailwindcss, website ini teinsiprasi dari google yang saya lupa nama inspirasinya. Pokonya mantaplah. Saya suka membuat website yang tampilannya indah dan menyejukan.
+            </div>
+        </div>
+    </section>
+    <div class="container-w !py-8 border-t border-t-slate-800 items-center justify-center flex flex-col  bg-slate-900 text-slate-500 ">
+        <span class="text-center">Dibuat dengan <span class="text-red-500">❤️</span> oleh <span class="font-semibold text-indigo-400">Wahyu Hidayat</span> menggunakan <span class="font-semibold text-sky-500">Tailwindcss</span></span>
+    </div>
+
+    <!-- up button -->
+    <a href="#home" id="button-up" class="fixed bottom-0 right-0 flex flex-col hidden p-4 mb-8 mr-8 text-white rounded-full shadow-lg bg-slate-900 hover:bg-slate-800 dark:bg-indigo-500 dark:text-black dark:hover:bg-indigo-600" >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+          </svg>
+    </a>
+
+    <script src="app.js"></script>
+    <script src="assets/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>
